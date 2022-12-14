@@ -1,0 +1,15 @@
+@media (max-width: 1695px) {
+
+    .container {
+        max-width: 1400px;
+    }
+
+    .hero {
+        &__image {
+            img {
+                width: 65%;
+                left: 30%;
+            }
+        }
+    }
+}

@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/Inter-Light.woff2"), url("../fonts/Inter-Light.woff");
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/Inter-Regular.woff2"), url("../fonts/Inter-Regular.woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/Inter-Medium.woff2"), url("../fonts/Inter-Medium.woff");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/Inter-Bold.woff2"), url("../fonts/Inter-Bold.woff");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+    
+    height:100%;
+    width:100%;
+    font-size:100%;
+    line-height:1.5;
+    font-size:20px;
+    -ms-text-size-adjust:100%;
+    -moz-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+    font-family: 'PT Sans', sans-serif;
+    color: #2d2d2d;
+}
+
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: underline;}
+ul li{list-style: none;}
+//ol {list-style-position: outside; list-style-type: disc;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+body {
+    font-family: 'Inter';
+    font-style: normal;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+.container {
+    max-width: 1694px;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+.header {
+    text-align: right;
+    margin: 40px 40px;
+    &__logo {
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+    }
+    &__logo-icon {
+    }
+    &__logo-text {
+        a {
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 42px;
+            color: #000;
+            margin: 0 0 0 20px;
+        }
+    }
+    
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 97px;
+    margin: 0 0 16px 0;
+}
+h2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 16px 0;
+}
+.hero {
+    margin: 0 0 40px 0;
+    &__content {
+    }
+    &__columns {
+        display: flex;
+    }
+    &__column-left {
+        width: 60%;
+        z-index: 1;
+    }
+    &__column-right {
+        width: 40%;
+        z-index: 0;
+    }
+    &__link {
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 30px;
+        color: #1A16E4;
+        margin: 0 0 52px 0;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0 0 78px 0;
+
+        p {
+            margin: 0 0 80px 0;
+        }
+        ul {
+            margin: 0 0 66px 0;
+
+            li {
+                list-style-type: disc;
+            }
+        }
+    }
+    &__button {
+        margin: 0 0 200px 0;
+
+     a {
+        padding: 21px 88px;
+        background: #6BA1F2;
+        border-radius: 50px;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #000000;
+     }
+
+    }
+    &__image {
+        //position: relative;
+        img {
+            position: absolute;
+            top: 20%;
+            left: 37%;
+        }
+
+    }
+}
+
+.footer {
+    &__items {
+        margin: 40px 10px;
+        a {
+            margin: 0 65px 0 0;
+        }
+    }
+}
+
+@import "_1700.scss";
+@import "_1500.scss";
+@import "_1200.scss";
+@import "_1024.scss";
+
+
+
+
+
