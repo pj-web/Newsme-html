@@ -5,10 +5,13 @@
     }
 
     .hero {
+        &__button {
+            margin: 80px 0 80px 0;
+        }
         &__image {
             img {
                 width: 60%;
-                top: 40%;
+                top: 30%;
                 left: 35%;
             }
         }

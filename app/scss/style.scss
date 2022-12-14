@@ -79,8 +79,10 @@ body {
 }
 
 .header {
-    text-align: right;
-    margin: 40px 40px;
+    &__inner {
+        text-align: right;
+        margin: 40px 0px;
+    }
     &__logo {
         display: flex;
         justify-content:flex-end;
@@ -94,7 +96,7 @@ body {
             font-size: 35px;
             line-height: 42px;
             color: #000;
-            margin: 0 0 0 20px;
+            margin: 0 0 0 14px;
         }
     }
     
@@ -116,15 +118,18 @@ h2 {
     margin: 0 0 40px 0;
     &__content {
     }
+    &__image-mobile {
+        display: none;
+    }
     &__columns {
         display: flex;
     }
     &__column-left {
-        width: 60%;
+        width: 58%;
         z-index: 1;
     }
     &__column-right {
-        width: 40%;
+        width: 42%;
         z-index: 0;
     }
     &__link {
@@ -152,7 +157,7 @@ h2 {
         }
     }
     &__button {
-        margin: 0 0 200px 0;
+        margin: 120px 0 160px 0;
 
      a {
         padding: 21px 88px;
@@ -163,6 +168,10 @@ h2 {
         line-height: 30px;
         text-transform: uppercase;
         color: #000000;
+        &:hover {
+            text-decoration: none;
+            background: #719ad6;
+        }
      }
 
     }
@@ -179,8 +188,8 @@ h2 {
 
 .footer {
     &__items {
-        margin: 40px 10px;
-        a {
+        margin: 40px 0px;
+        a:first-child {
             margin: 0 65px 0 0;
         }
     }
